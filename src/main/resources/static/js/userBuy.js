@@ -53,9 +53,8 @@ $(document).ready(function () {
         var ticketStr=
             "<div class='ticket'>"+
             "<p style='font-size:25px;color:#1caf9a'>"+movieName+"</p>"+
-            "<p style='font-size:20px;'>"+hallName+'  '+ticket.rowIndex+"排"+ticket.columnIndex+"座"+"</p>"+
-            "<p>"+startStr+"</p>"+//startTime.getMonth()+"月"+startTime.getDate()+"日 "+startTime.getHours+":"+startTime.getMinutes()+"</td>"+
-            "<p>"+endStr+"</p>"+//endTime.getMonth()+"月"+endTime.getDate()+"日 "+endTime.getHours+":"+endTime.getMinutes()+"</td>"+
+            "<p style='font-size:20px;'>"+hallName+'  '+ticket.rowIndex+"排 "+ticket.columnIndex+"座"+"</p>"+
+            "<p>"+startStr+endStr+"</p>"+
             "<p>"+ticket.state+"</p>"+
             "</div>";
         $("#ticketTable").append(ticketStr)

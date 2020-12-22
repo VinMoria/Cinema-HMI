@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: white;
 }
 
 .movie-operations {
@@ -27,7 +28,8 @@
 
 .seesion-container {
     margin-top: 30px;
-    background-color: whitesmoke;
+    border: 1px solid #1caf9a;
+    border-radius: 10px;
 }
 
 .statistic-container {

@@ -23,22 +23,23 @@
 </head>
 <body>
 <div class="nav-top-container">
-    <div class="nav-logo title">NJU Cinema</div>
-    <ul class="nav nav-pills">
-        <li role="presentation" class="active"><a href="/user/movie">返回</a></li>
-    </ul>
-    <div class="btn-group">
-        <button class="nav-user-container btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-            <img class="avatar-sm" src="/images/defaultAvatar.jpg"/>
-            <span class="gray-text" style="vertical-align: middle">用户A&nbsp;<span class="caret"></span></span>
-        </button>
-        <ul class="dropdown-menu">
-            <li><a href="/user/buy">电影票</a></li>
-            <li><a href="/user/member">卡包</a></li>
-            <li id="logout"><a href="#">登出</a></li>
-        </ul>
+
+    <div style="display: flex;justify-content: space-between;padding: 10px 0">
+        <div class="nav-logo title">NJU-Cinema</div>
+
+        <div class="btn-group" style="margin: auto 0">
+            <button class="nav-user-container btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="avatar-sm" src="/images/defaultAvatar.jpg" />
+                <span class="gray-text" style="vertical-align: middle">我的<span class="caret"></span></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="/user/buy" style="color: #1caf9a">电影票</a></li>
+                <li><a href="/user/member" style="color: #1caf9a">卡包</a></li>
+                <li id="logout"><a href="#" style="color: #1caf9a">登出</a></li>
+            </ul>
+        </div>
     </div>
+    <div class="btn-group"><a href="/user/movie">返回首页</a></div>
 </div>
 
 <div class="content-container">

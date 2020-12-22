@@ -32,9 +32,8 @@
 }
 
 .ticket{
-    width: 24%;
-    max-width: 20%;
-    min-width: 20%;
+    width: 23%;
+    border: 1px solid #1caf9a;
     color: white;
     background-color: #333;
     border-radius: 10px;

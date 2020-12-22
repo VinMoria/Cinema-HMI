@@ -30,21 +30,21 @@ function getVIP() {
             alert(error);
         });
 
-    getRequest(
-        '/vip/getVIPInfo',
-        function (res) {
-            if (res.success) {
-                $("#member-buy-price").text(res.content.price);
-                $("#member-buy-description").text("充值优惠：" + res.content.description + "。永久有效");
-                $("#member-description").text(res.content.description);
-            } else {
-                alert(res.content);
-            }
-
-        },
-        function (error) {
-            alert(error);
-        });
+    // getRequest(
+    //     '/vip/getVIPInfo',
+    //     function (res) {
+    //         if (res.success) {
+    //             $("#member-buy-price").text(res.content.price);
+    //             $("#member-buy-description").text("充值优惠：" + res.content.description + "。永久有效");
+    //             $("#member-description").text(res.content.description);
+    //         } else {
+    //             alert(res.content);
+    //         }
+    //
+    //     },
+    //     function (error) {
+    //         alert(error);
+    //     });
 }
 
 function buyClick() {
