@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.cinema.data.promotion.VIPCardTypeMapper">
+
+    <insert id="insertVIPCardType" parameterType="com.example.cinema.po.VIPCardType"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into vip_card_type(name,description,state,price,discount_rate,target_amount,discount_amount)
+        values(#{name}, #{description}, #{state}, #{price}, #{discountRate}, #{targetAmount},#{discountAmount})
+    </insert>
+
+    <select id="selectVIPCardTypeById" resultMap="VIPCardType">
+        select * from vip_card_type where id=#{id}
+    </select>
+
+    <resultMap id="VIPCardType" type="com.example.cinema.po.VIPCardType">
+        <result column="id" property="id"></result>
+        <result column="name" property="name"></result>
+        <result column="description" property="description"></result>
+        <result column="price" property="price"></result>
+        <result column="state" property="state"></result>
+        <result column="target_amount" property="targetAmount"></result>
+        <result column="discount_amount" property="discountAmount"></result>
+        <result column="discount_rate" property="discountRate"></result>
+    </resultMap>
+
+    <update id="updateVIPCardType">
+        update vip_card_type set
+        name = #{name}
+        description = #{description},
+        state = #{state},
+        price = #{price},
+        discount_rate = #{discountRate},
+        target_amount = #{targetAmount},
+        discount_amount = #{discountAmount}
+        where id=#{id}
+    </update>
+
+    <delete id="deleteVIPCardType">
+        delete from vip_card_type where id = #{id}
+    </delete>
+
+
+    <select id="getAllVipCardType">
+        select * from vip_card_type
+    </select>
+</mapper>

@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+input {
+    width: 250px;
+    height: 25px;
+    border: 0;
+}
+ul {
+    list-style: none;
+}
+.card {
+
+}
+.title {
+    font-size: 24px;
+}
+.avatar-lg {
+    width: 55px;
+    height:55px;
+    border-radius: 50%;
+}
+.avatar-sm {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+.label {
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px!important;
+    margin: 0 20px;
+}
+/**
+    颜色相关
+ */
+.gray-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #1caf9a;
+}
+.dark-text {
+    color: #666;
+}
+.error-text {
+    color: #ed5565;
+}
+.primary-text {
+    font-size: 25px;
+    color: #1caf9a;
+}
+.primary-bg {
+    background: #1caf9a;
+}
+.error-bg {
+    background: #ed5565;
+}
+/**
+    form相关
+ */
+
+
+/**
+    导航相关
+ */
+.main-container {
+    display: flex;
+    height: 100%;
+}
+.content-container {
+    flex: 1;
+    height: 100%;
+    background: #444;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.content-item {
+    margin-bottom: 30px;
+}
+.content-card {
+    padding: 20px;
+    margin: 10px;
+}
+.nav-left-container {
+    width: 250px;
+    height: 100%;
+    background: #1d2939;
+    padding: 30px 20px;
+}
+.nav-top-container {
+    width: 100%;
+    background: #333;
+    padding: 20px;
+    justify-content: space-around;
+    border-bottom: 1px solid #1caf9a;
+}
+.nav-user-container {
+    padding: 5px;
+    text-align: center;
+    color: #333;
+    border-radius: 50px;
+    background-color: #333;
+    border: 1px solid #1caf9a;
+}
+.nav-container .title {
+    color: #fff;
+}
+.nav-logo {
+    color: #1caf9a;
+    font-size: 50px;
+}
+
+.notice {
+    visibility: hidden;
+    margin-left: 40px;
+    color: rgba(255, 4, 84, 0.82);
+    font-size: 12px;
+}
+
